@@ -4,7 +4,7 @@ type Props = {
 
 const SectionHeading = ({ children }: Props) => {
   return (
-    <h1 className="mb-5 text-center text-3xl font-medium capitalize text-gray-950">
+    <h1 className="mb-10 text-center text-3xl font-medium capitalize text-gray-950">
       {children}
     </h1>
   );

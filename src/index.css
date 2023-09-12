@@ -11,6 +11,7 @@
 }
 html {
   @apply bg-gray-50  font-inter text-gray-500;
+  --line-color: #e5e7eb;
 }
 
 @layer components {

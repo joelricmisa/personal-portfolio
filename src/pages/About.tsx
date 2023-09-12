@@ -3,7 +3,7 @@ import SectionHeading from "../components/SectionHeading";
 const About = () => {
   return (
     <section>
-      <div className="mx-auto w-full text-center text-gray-950 md:w-[700px]">
+      <div className="mx-auto max-w-[700px] px-5 text-center text-gray-950 ">
         <SectionHeading>About Me</SectionHeading>
         <p className=" leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,

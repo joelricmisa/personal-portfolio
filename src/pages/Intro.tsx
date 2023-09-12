@@ -2,9 +2,8 @@ import myPic from "../assets/images/me.png";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-type Props = {};
 
-const Intro = (props: Props) => {
+const Intro = () => {
   return (
     <section className="bg-gray-50/10">
       <div className="min-w-screen relative inset-0 min-h-screen overflow-hidden pt-40">
