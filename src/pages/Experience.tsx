@@ -6,10 +6,12 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../lib/constants";
+import useSectionInView from "../hooks/useSectionInView";
 
 const Experience = () => {
+  const { ref } = useSectionInView("Experience");
   return (
-    <section>
+    <section ref={ref} id="experience" className="scroll-mt-32">
       <div>
         <SectionHeading>My Experience</SectionHeading>
         <br />

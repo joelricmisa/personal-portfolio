@@ -1,11 +1,24 @@
+import { useRef } from "react";
 import { projectsData } from "../lib/constants";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
 
 const ProjectCard = ({ title, description, tags, imageUrl }: ProjectProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <section>
-      <div className="group relative mx-auto mb-10 flex w-full flex-col  overflow-hidden  rounded-xl border border-black/[0.1] shadow-lg sm:h-[350px] sm:flex-row">
+      <motion.div
+        ref={ref}
+        style={{ scale: scaleProgress, opacity: opacityProgress }}
+        className="group relative mx-auto mb-10 flex w-full flex-col  overflow-hidden  rounded-xl border border-black/[0.1] shadow-lg sm:h-[350px] sm:flex-row"
+      >
         <div className="flex basis-1/2 flex-col  items-center gap-10 p-8">
           <div className="flex flex-col  ">
             <h1 className="mb-3 text-2xl font-medium text-gray-700">{title}</h1>
@@ -30,7 +43,7 @@ const ProjectCard = ({ title, description, tags, imageUrl }: ProjectProps) => {
           group-hover:scale-105 "
           />
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 };

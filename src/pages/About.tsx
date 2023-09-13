@@ -1,9 +1,17 @@
 import SectionHeading from "../components/SectionHeading";
+import { motion } from "framer-motion";
+import useSectionInView from "../hooks/useSectionInView";
 
 const About = () => {
+  const { ref } = useSectionInView("About");
   return (
-    <section>
-      <div className="mx-auto max-w-[700px] px-5 text-center text-gray-950 ">
+    <section ref={ref} id="about" className="scroll-mt-32">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: [25, 0, 25, 0], opacity: 1 }}
+        viewport={{ once: true }}
+        className="mx-auto max-w-[700px] px-5 text-center text-gray-950 "
+      >
         <SectionHeading>About Me</SectionHeading>
         <p className=" leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
@@ -21,7 +29,7 @@ const About = () => {
           animi laborum vitae soluta! Aliquam accusamus facilis consequatur hic
           quas debitis placeat neque ullam.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -2,11 +2,21 @@ import myPic from "../assets/images/me.png";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import useMediaQuery from "../hooks/useMediaQuery";
+import { motion } from "framer-motion";
+import useSectionInView from "../hooks/useSectionInView";
 
 const Intro = () => {
+  const minWidth = useMediaQuery("(min-width:640px)");
+  const { ref } = useSectionInView("Home");
+
   return (
-    <section className="bg-gray-50/10">
-      <div className="min-w-screen relative inset-0 min-h-screen overflow-hidden pt-40">
+    <section ref={ref} id="home" className="bg-gray-50/10">
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: [0, 25, 0], opacity: 1 }}
+        className="min-w-screen relative inset-0 overflow-hidden pt-40"
+      >
         <div className="mx-auto flex w-full flex-col items-center justify-center gap-6  px-10 md:w-[700px] ">
           <div className="relative h-24 w-24">
             <img
@@ -25,13 +35,15 @@ const Intro = () => {
             <span className="ml-2 underline">React JS</span>.
           </h1>
 
-          <div className="flex gap-4">
-            <button
-              type="button"
-              className="introButton bg-gray-900 text-white"
-            >
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: [-50, 0], opacity: 1 }}
+            transition={{ delay: 0.75 }}
+            className="flex flex-col gap-4  pb-10 sm:flex-row"
+          >
+            <a href="#contact" className="introButton bg-gray-900 text-white">
               Contact me here <BsArrowRight />
-            </button>
+            </a>
             <button type="button" className="introButton">
               Download CV <HiDownload />
             </button>
@@ -40,18 +52,19 @@ const Intro = () => {
               target="_blank"
               className="introButton"
             >
-              <BsLinkedin />
+              {minWidth ? "" : "LinkedIn"} <BsLinkedin />
             </a>
             <a
               href="https://github.com/joelricmisa"
               target="_blank"
               className="introButton"
             >
+              {minWidth ? "" : "Github"}
               <FaGithubSquare />
             </a>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

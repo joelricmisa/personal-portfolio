@@ -1,13 +1,21 @@
 import React from "react";
 import SectionHeading from "../components/SectionHeading";
 import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "framer-motion";
+import useSectionInView from "../hooks/useSectionInView";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const { ref } = useSectionInView("Contact");
   return (
-    <section className="mt-24">
-      <div className="mx-auto max-w-[700px] p-5">
+    <section ref={ref} id="contact" className="mt-24 scroll-mt-32">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: [0, 25, 0], opacity: 1 }}
+        viewport={{ once: true }}
+        className="mx-auto max-w-[700px] p-5"
+      >
         <SectionHeading>Contact Me</SectionHeading>
         <p>
           Please contact me directly at{" "}
@@ -40,7 +48,7 @@ const Contact = (props: Props) => {
             </span>
           </button>
         </form>
-      </div>
+      </motion.div>
     </section>
   );
 };
