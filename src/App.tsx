@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SectionDivider from "./components/SectionDivider";
+import ThemeButton from "./components/ThemeButton";
 import ActiveSectionContextProvider from "./context/ActiveSectionContext";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -30,6 +31,7 @@ function App() {
 
         <Contact />
         <Footer />
+        <ThemeButton />
       </ActiveSectionContextProvider>
     </div>
   );
