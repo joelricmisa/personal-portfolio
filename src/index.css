@@ -10,12 +10,17 @@
   scroll-behavior: smooth;
 }
 html {
-  @apply bg-gray-50  font-inter text-gray-500;
+  @apply bg-gray-50  font-inter text-gray-900;
   --line-color: #e5e7eb;
+}
+
+html.dark {
+  @apply bg-gray-900 text-gray-50;
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 
 @layer components {
   .introButton {
-    @apply flex cursor-pointer items-center justify-center gap-2 rounded-full border  border-black/[0.1] bg-white px-4 py-3 text-gray-700 shadow-md outline-none transition hover:scale-110  active:scale-105;
+    @apply flex cursor-pointer items-center justify-center gap-2 rounded-full border  border-black/[0.1] bg-white px-4 py-3 text-gray-700 shadow-md outline-none transition hover:scale-110  active:scale-105 dark:bg-white/20 dark:text-white/80 dark:shadow-black/50;
   }
 }

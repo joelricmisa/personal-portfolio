@@ -18,10 +18,10 @@ const Skills = () => {
   };
 
   return (
-    <section ref={ref} id="skills" className="scroll-mt-32">
+    <section ref={ref} id="skills" className="scroll-mt-36 sm:scroll-mt-32">
       <div className="mx-auto max-w-[700px] px-5 ">
         <SectionHeading>Skills</SectionHeading>
-        <ul className="flex flex-wrap items-center justify-center gap-5">
+        <ul className="flex flex-wrap items-center justify-center gap-7">
           {skillsData.map((skill, index) => (
             <motion.li
               variants={skillVariant}
@@ -30,7 +30,7 @@ const Skills = () => {
               viewport={{ once: true }}
               custom={index}
               key={`${skill + index}`}
-              className="rounded-md border border-black/10  bg-gray-100/30 px-3 py-2 text-gray-700 shadow-md"
+              className="rounded-md border border-black/10  bg-gray-100/30 px-3 py-2 font-medium shadow-md dark:bg-blue-100/10 dark:shadow-black/70"
             >
               {skill}
             </motion.li>

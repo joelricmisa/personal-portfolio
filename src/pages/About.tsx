@@ -5,15 +5,15 @@ import useSectionInView from "../hooks/useSectionInView";
 const About = () => {
   const { ref } = useSectionInView("About");
   return (
-    <section ref={ref} id="about" className="scroll-mt-32">
+    <section ref={ref} id="about" className="scroll-mt-36 sm:scroll-mt-32">
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: [25, 0, 25, 0], opacity: 1 }}
         viewport={{ once: true }}
-        className="mx-auto max-w-[700px] px-5 text-center text-gray-950 "
+        className="mx-auto max-w-[700px] px-5 text-center sm:text-lg"
       >
         <SectionHeading>About Me</SectionHeading>
-        <p className=" leading-relaxed">
+        <p className="  leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
           minima nemo porro aperiam aspernatur atque officia exercitationem
           iusto. Possimus nam numquam commodi quae incidunt obcaecati. Rem unde
