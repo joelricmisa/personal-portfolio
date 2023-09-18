@@ -3,8 +3,6 @@ import useSectionInView from "../hooks/useSectionInView";
 import { skillsData } from "../lib/constants";
 import { motion } from "framer-motion";
 
-type Props = {};
-
 const Skills = () => {
   const { ref } = useSectionInView("Skills");
 

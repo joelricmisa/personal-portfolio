@@ -4,7 +4,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
 
-const ProjectCard = ({ title, description, tags, imageUrl }: ProjectProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  tags,
+  imageUrl,
+  href,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -35,7 +41,7 @@ const ProjectCard = ({ title, description, tags, imageUrl }: ProjectProps) => {
             ))}
           </ul>
         </div>
-        <a href="#" className="hidden basis-1/2  sm:block">
+        <a href={href} target="_blank" className="hidden basis-1/2  sm:block">
           <img
             src={imageUrl}
             alt="Project Img"
