@@ -52,7 +52,7 @@ const Contact = () => {
         <p>
           Please contact me directly at
           <span className="mx-1 select-all font-medium underline">
-            joelricmisa1@gmail.com
+            joelriccmisa@gmail.com
           </span>
           or through this form.
         </p>
