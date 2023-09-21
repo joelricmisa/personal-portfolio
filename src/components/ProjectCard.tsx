@@ -26,7 +26,7 @@ const ProjectCard = ({
         className="group relative mx-auto mb-16 flex w-full flex-col  overflow-hidden  rounded-xl border border-black/[0.1] shadow-lg dark:bg-blue-100/10  dark:shadow-black/70 sm:h-[350px] sm:flex-row"
       >
         <div className="flex basis-1/2 flex-col  items-center justify-between p-8">
-          <div className="flex flex-col  ">
+          <div className="mb-8 flex  flex-col">
             <h1 className="mb-3 text-2xl font-medium">{title}</h1>
             <p>{description}</p>
           </div>
