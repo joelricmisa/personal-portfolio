@@ -13,21 +13,14 @@ const About = () => {
         className="mx-auto max-w-[700px] px-5 text-center sm:text-lg"
       >
         <SectionHeading>About Me</SectionHeading>
-        <p className="  leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
-          minima nemo porro aperiam aspernatur atque officia exercitationem
-          iusto. Possimus nam numquam commodi quae incidunt obcaecati. Rem unde
-          dicta laudantium similique excepturi voluptas, suscipit eos facilis
-          aliquam culpa vero incidunt nostrum illo ut consequuntur a iste nisi
-          placeat ad.
-        </p>
-        <p className="mt-5 leading-relaxed">
-          Sunt, obcaecati! Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Earum, ea cumque. Earum quo cupiditate velit quis explicabo
-          natus iusto. Dolorem ut et, exercitationem numquam iste porro,
-          cupiditate hic quos harum facere similique reprehenderit quas! Hic non
-          animi laborum vitae soluta! Aliquam accusamus facilis consequatur hic
-          quas debitis placeat neque ullam.
+        <p className="leading-loose">
+          With a strong foundation in HTML, CSS, JavaScript, React, and Tailwind
+          CSS, I am a Junior Front-End Developer who excels at creating and
+          maintaining user-friendly websites. My specialty is developing clean,
+          optimized code using the most up-to-date development tools and
+          methodologies, and creating dynamic, engaging interfaces. I also work
+          well in cross-functional teams and like being a team player to create
+          excellent web applications.
         </p>
       </motion.div>
     </section>

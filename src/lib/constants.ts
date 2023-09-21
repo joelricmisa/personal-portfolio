@@ -3,7 +3,6 @@ import ecommerce from "../assets/images/ecommerce.png";
 import joegym from "../assets/images/joegym.jpg";
 import pasada from "../assets/images/pasada.jpg";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const Links = [
@@ -19,24 +18,24 @@ export const projectsData = [
   {
     title: "Ecommerce Website",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "An online marketplace enables customers to purchase and sell material goods, services, and digital products without physically visiting a store.",
+    tags: ["React", "Tailwind CSS", "Framer Motion"],
     imageUrl: ecommerce,
     href: "https://marketplace-ecommerce-joelricmisa.vercel.app/",
   },
   {
     title: "Fitness Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A landing page of fitness website that provides workout and nutrition programs.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: joegym,
     href: "https://fitness-web-app-joelric.vercel.app/#home",
   },
   {
     title: "Mobile Application ",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Mobile application that will act as an additional learning tool for PUV drivers and is funded by the DOST (Department of Science and Technology). ",
+    tags: ["Ionic Framework", "Angular", "Typescript", "Tailwind CSS"],
     imageUrl: pasada,
     href: "https://www.youtube.com/watch?v=AN7ht86bj2I&ab_channel=PASADAPH",
   },
@@ -48,46 +47,32 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
-  "Next.js",
+  "Ionic",
+  "Angular",
+  "Tailwind CSS",
+  "NPM",
+  "API",
   "Node.js",
+  "SQL",
+  "MySQL",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated ",
-    location: "Philippines",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eaque sint necessitatibus, cum quas architecto obcaecati voluptatibus tempore possimus sunt.",
+    title: "Mobile Developer Intern",
+    location:
+      "Technological Institute of the Philippines, Quezon City / Department of Science and Technology",
+
+    icon: React.createElement(CgWorkAlt),
+    date: "January 2023 - May 2023",
+  },
+  {
+    title: "Graduate of a Bachelor of Science in Information Technology",
+    location: "Technological Institue of the Philippines, Quezon City",
 
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Philippines",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eaque sint necessitatibus, cum quas architecto obcaecati voluptatibus tempore possimus sunt.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Philippines",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eaque sint necessitatibus, cum quas architecto obcaecati voluptatibus tempore possimus sunt.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "September 2023",
   },
 ] as const;

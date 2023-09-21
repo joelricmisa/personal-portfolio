@@ -15,7 +15,7 @@ const Experience = () => {
   return (
     <section ref={ref} id="experience" className="scroll-mt-36 sm:scroll-mt-32">
       <div>
-        <SectionHeading>My Experience</SectionHeading>
+        <SectionHeading>My Timeline</SectionHeading>
         <br />
         <VerticalTimeline lineColor="">
           {experiencesData.map((item, index) => (
@@ -41,9 +41,8 @@ const Experience = () => {
                   fontSize: "1.5rem",
                 }}
               >
-                <h1 className="font-medium">{item.title}</h1>
+                <h1 className="text-xl font-medium">{item.title}</h1>
                 <p>{item.location}</p>
-                <p>{item.description}</p>
               </VerticalTimelineElement>
             </React.Fragment>
           ))}

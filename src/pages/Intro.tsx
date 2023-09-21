@@ -27,13 +27,11 @@ const Intro = () => {
 
             <span className="absolute bottom-1 right-0 text-3xl">👋</span>
           </div>
-
           <h1 className="text-center text-xl font-medium leading-loose  dark:text-white/90 sm:text-2xl sm:leading-loose">
-            <strong>Hello, I'm Joel Ric Misa</strong> I'm a
-            <strong> frontend developer</strong> with
-            <strong> 4 years</strong> of experience. I enjoy building
-            <em> sites & apps</em>. My focus is
-            <span className="ml-2 underline">React JS</span>.
+            <strong>Hello, I'm Joel Ric Misa,</strong> a passionate
+            <strong> front-end developer</strong> from the Philippines. I enjoy
+            developing
+            <em> websites and applications</em>.
           </h1>
 
           <motion.div
@@ -52,7 +50,7 @@ const Intro = () => {
               Download CV <HiDownload />
             </button>
             <a
-              href="https://www.linkedin.com/in/joel-ric-misa-2803a7243/"
+              href="https://www.linkedin.com/in/joelricmisa/"
               target="_blank"
               className="introButton"
             >
