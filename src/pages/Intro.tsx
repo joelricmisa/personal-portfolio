@@ -5,6 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import useSectionInView from "../hooks/useSectionInView";
+import { resume } from "../assets/resume";
 
 const Intro = () => {
   const minWidth = useMediaQuery("(min-width:640px)");
@@ -46,11 +47,7 @@ const Intro = () => {
             >
               Contact me here <BsArrowRight />
             </a>
-            <a
-              href="../../public/Joelricmisa Resume.pdf"
-              download={true}
-              className="introButton"
-            >
+            <a href={resume} download={true} className="introButton">
               Download CV <HiDownload />
             </a>
             <a
