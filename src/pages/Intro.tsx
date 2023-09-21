@@ -47,7 +47,7 @@ const Intro = () => {
               Contact me here <BsArrowRight />
             </a>
             <a
-              href="/public/Joelricmisa Resume.pdf"
+              href="/Joelricmisa Resume.pdf"
               download={true}
               className="introButton"
             >
