@@ -23,7 +23,7 @@ const Contact = () => {
     register,
     trigger,
     reset,
-    formState: { errors, touchedFields, dirtyFields },
+    formState: { errors, touchedFields, diryFields },
   } = useForm<ContactSchema>({
     resolver: zodResolver(contactSchema),
     mode: "onTouched",

@@ -2,6 +2,8 @@ import React from "react";
 import ecommerce from "../assets/images/ecommerce.png";
 import joegym from "../assets/images/joegym.jpg";
 import pasada from "../assets/images/pasada.jpg";
+import digital from "../assets/images/digital.jpg";
+import lifecoach from "../assets/images/lifecoach.jpg";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 
@@ -29,6 +31,22 @@ export const projectsData = [
       "A landing page of fitness website that provides workout and nutrition programs.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: joegym,
+    href: "https://fitness-web-app-joelric.vercel.app/#home",
+  },
+  {
+    title: "Life Coach Website",
+    description:
+      "A website that offers help to people make progress in their lives to attain greater fulfillment.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    imageUrl: lifecoach,
+    href: "https://fitness-web-app-joelric.vercel.app/#home",
+  },
+  {
+    title: "Digital Agency Website",
+    description:
+      "A mock company that provides digital services to its customers through an online website.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    imageUrl: digital,
     href: "https://fitness-web-app-joelric.vercel.app/#home",
   },
   {
