@@ -39,7 +39,7 @@ export const projectsData = [
       "A website that offers help to people make progress in their lives to attain greater fulfillment.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: lifecoach,
-    href: "https://fitness-web-app-joelric.vercel.app/#home",
+    href: "https://life-coach-joelric.vercel.app/#home",
   },
   {
     title: "Digital Agency Website",
@@ -47,7 +47,7 @@ export const projectsData = [
       "A mock company that provides digital services to its customers through an online website.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: digital,
-    href: "https://fitness-web-app-joelric.vercel.app/#home",
+    href: "https://digital-agency-joelric.vercel.app/",
   },
   {
     title: "Mobile Application ",
