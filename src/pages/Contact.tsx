@@ -23,7 +23,7 @@ const Contact = () => {
     register,
     trigger,
     reset,
-    formState: { errors, touchedFields, diryFields },
+    formState: { errors, touchedFields },
   } = useForm<ContactSchema>({
     resolver: zodResolver(contactSchema),
     mode: "onTouched",
@@ -35,7 +35,6 @@ const Contact = () => {
     if (!isValid) {
       e.preventDefault();
       console.log(touchedFields);
-      console.log(dirtyFields);
     } else {
       reset();
     }
